@@ -13,39 +13,8 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="711.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitorizare.controller.EmployeeController">
    <children>
-      <AnchorPane fx:id="anchor_tasks" layoutX="349.0" layoutY="163.0" prefHeight="385.0" prefWidth="630.0" style="-fx-background-color: white;">
-         <children>
-            <Label layoutX="33.0" layoutY="1.0" prefHeight="27.0" prefWidth="121.0" text="Sarcini primite">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Line endX="100.0" layoutX="122.0" layoutY="35.0" startX="-100.0" />
-            <TableView layoutX="21.0" layoutY="61.0" prefHeight="168.0" prefWidth="619.0">
-               <columns>
-                  <TableColumn prefWidth="29.0" text="ID" />
-                  <TableColumn prefWidth="129.0" text="Descriere" />
-                  <TableColumn prefWidth="115.0" text="DataAsignarii" />
-                  <TableColumn prefWidth="128.0" text="DataFinalizarii" />
-                  <TableColumn prefWidth="101.0" text="Deadline" />
-                  <TableColumn prefWidth="118.0" text="Status" />
-               </columns>
-            </TableView>
-            <Button layoutX="21.0" layoutY="260.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="136.0" text="Preia sarcina">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button layoutX="174.0" layoutY="260.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" text="Finalizeaza sarcina">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
       <AnchorPane fx:id="anchor_viewTeams" layoutX="349.0" layoutY="163.0" prefHeight="385.0" prefWidth="630.0" style="-fx-background-color: white;">
          <children>
             <Label layoutX="33.0" layoutY="1.0" prefHeight="27.0" prefWidth="121.0" text="Echipe">
@@ -64,6 +33,36 @@
                   <TableColumn prefWidth="90.0" text="Rol" />
               </columns>
             </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_tasks" layoutX="349.0" layoutY="163.0" prefHeight="385.0" prefWidth="630.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="33.0" layoutY="1.0" prefHeight="27.0" prefWidth="121.0" text="Sarcini primite">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="122.0" layoutY="35.0" startX="-100.0" />
+            <TableView layoutX="21.0" layoutY="61.0" prefHeight="168.0" prefWidth="619.0">
+               <columns>
+                  <TableColumn prefWidth="29.0" text="ID" />
+                  <TableColumn prefWidth="129.0" text="Descriere" />
+                  <TableColumn prefWidth="115.0" text="DataAsignarii" />
+                  <TableColumn prefWidth="128.0" text="DataFinalizarii" />
+                  <TableColumn prefWidth="101.0" text="Deadline" />
+                  <TableColumn prefWidth="118.0" text="Status" />
+               </columns>
+            </TableView>
+            <Button layoutX="21.0" layoutY="260.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="136.0" text="Rezolva sarcina">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="174.0" layoutY="260.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="160.0" text="Finalizeaza sarcina">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
       <Label layoutX="28.0" layoutY="22.0" prefHeight="37.0" prefWidth="90.0" text="Angajat:">
@@ -104,7 +103,7 @@
             <Font size="14.0" />
          </font>
       </TextField>
-      <Button layoutX="349.0" layoutY="92.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="Corfirma">
+      <Button layoutX="349.0" layoutY="92.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="136.0" text="Corfirma prezenta">
          <font>
             <Font size="14.0" />
          </font>
@@ -128,7 +127,7 @@
       <Line endX="189.0" layoutX="118.0" layoutY="195.0" startX="-100.0" />
       <VBox layoutX="28.0" layoutY="207.0" prefHeight="178.0" prefWidth="272.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#handleClickOnViewTasks" prefHeight="44.0" prefWidth="280.0" text="Vizualizare sarcini">
+            <Button mnemonicParsing="false" onAction="#handleClickOnViewTasks" prefHeight="44.0" prefWidth="280.0" text="Vizualizare sarcini primite">
                <font>
                   <Font size="18.0" />
                </font>
