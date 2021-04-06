@@ -14,7 +14,7 @@
 
 <AnchorPane prefHeight="921.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitorizare.controller.EmployerController">
    <children>
-      <AnchorPane fx:id="anchor_createTeam" layoutX="21.0" layoutY="400.0" prefHeight="464.0" prefWidth="903.0" style="-fx-background-color: white;" stylesheets="@styles/arrow_buttons.css">
+      <AnchorPane fx:id="anchor_createTeam" layoutX="21.0" layoutY="400.0" prefHeight="464.0" prefWidth="903.0" style="-fx-background-color: white">
          <children>
             <Label layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="143.0" text="Creaza echipa">
                <font>
@@ -55,7 +55,7 @@
                   <TableColumn prefWidth="135.0" text="Functie" />
                </columns>
             </TableView>
-            <Button id="left" layoutX="452.0" layoutY="82.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="37.0" styleClass=".arrow-left" stylesheets="@styles/arrow_buttons.css" text="&gt;">
+            <Button id="left" layoutX="452.0" layoutY="82.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="37.0">
                <font>
                   <Font name="System Bold" size="16.0" />
                </font>
