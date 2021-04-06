@@ -14,24 +14,6 @@
 
 <AnchorPane prefHeight="921.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitorizare.controller.EmployerController">
    <children>
-      <AnchorPane fx:id="anchor_topEmployees" layoutX="21.0" layoutY="400.0" prefHeight="448.0" prefWidth="903.0" style="-fx-background-color: white;">
-         <children>
-            <TableView layoutX="21.0" layoutY="70.0" prefHeight="200.0" prefWidth="433.0">
-               <columns>
-                  <TableColumn prefWidth="75.0" text="ID" />
-                  <TableColumn prefWidth="118.0" text="Descriere" />
-                  <TableColumn prefWidth="101.0" text="Prenume" />
-                  <TableColumn prefWidth="138.0" text="Numar sarcini rezolvate" />
-               </columns>
-            </TableView>
-            <Label layoutX="21.0" layoutY="14.0" prefHeight="32.0" prefWidth="201.0" text="Top angajati">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Line endX="48.0" layoutX="115.0" layoutY="46.0" startX="-100.0" />
-         </children>
-      </AnchorPane>
       <AnchorPane fx:id="anchor_createTeam" layoutX="21.0" layoutY="400.0" prefHeight="464.0" prefWidth="903.0" style="-fx-background-color: white;" stylesheets="@styles/arrow_buttons.css">
          <children>
             <Label layoutX="13.0" layoutY="14.0" prefHeight="17.0" prefWidth="143.0" text="Creaza echipa">
@@ -93,6 +75,24 @@
                   <Font size="14.0" />
                </font>
             </TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_topEmployees" layoutX="21.0" layoutY="400.0" prefHeight="448.0" prefWidth="903.0" style="-fx-background-color: white;">
+         <children>
+            <TableView layoutX="21.0" layoutY="70.0" prefHeight="200.0" prefWidth="433.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="ID" />
+                  <TableColumn prefWidth="118.0" text="Descriere" />
+                  <TableColumn prefWidth="101.0" text="Prenume" />
+                  <TableColumn prefWidth="138.0" text="Numar sarcini rezolvate" />
+               </columns>
+            </TableView>
+            <Label layoutX="21.0" layoutY="14.0" prefHeight="32.0" prefWidth="201.0" text="Top angajati">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="48.0" layoutX="115.0" layoutY="46.0" startX="-100.0" />
          </children>
       </AnchorPane>
       <Label alignment="CENTER" layoutX="21.0" layoutY="22.0" prefHeight="39.0" prefWidth="114.0" text="Sef:">
@@ -184,5 +184,50 @@
       </VBox>
       <Line endX="48.0" layoutX="504.0" layoutY="134.0" startX="-117.0" />
       <Line endX="171.0" layoutX="149.0" layoutY="371.0" startX="-135.0" />
+      <AnchorPane fx:id="anchor_tasks" layoutX="21.0" layoutY="400.0" prefHeight="448.0" prefWidth="903.0" style="-fx-background-color: white;">
+         <children>
+            <TableView layoutX="21.0" layoutY="70.0" prefHeight="147.0" prefWidth="602.0">
+               <columns>
+                  <TableColumn prefWidth="50.0" text="ID" />
+                  <TableColumn prefWidth="125.0" text="Descriere" />
+                  <TableColumn prefWidth="101.0" text="Data Asignarii" />
+                  <TableColumn prefWidth="126.0" text="Data Finalizarii" />
+                  <TableColumn prefWidth="111.0" text="Deadline " />
+                  <TableColumn prefWidth="87.0" text="Status" />
+               </columns>
+            </TableView>
+            <Label layoutX="21.0" layoutY="14.0" prefHeight="32.0" prefWidth="201.0" text="Sarcini">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="48.0" layoutX="115.0" layoutY="46.0" startX="-100.0" />
+            <TableView layoutX="21.0" layoutY="275.0" prefHeight="147.0" prefWidth="512.0">
+               <columns>
+                  <TableColumn prefWidth="50.0" text="ID" />
+                  <TableColumn prefWidth="125.0" text="Nume" />
+                  <TableColumn prefWidth="101.0" text="Team Leader" />
+                  <TableColumn prefWidth="126.0" text="Nr. Membri" />
+                  <TableColumn prefWidth="111.0" text="Nr. Sarcini" />
+               </columns>
+            </TableView>
+            <Button layoutX="644.0" layoutY="70.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="211.0" text="Trimite sarcina angajatului">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="564.0" layoutY="275.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="211.0" text="Trimite sarcina echipei">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="21.0" layoutY="233.0" prefHeight="32.0" prefWidth="201.0" text="Echipe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="48.0" layoutX="122.0" layoutY="265.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
