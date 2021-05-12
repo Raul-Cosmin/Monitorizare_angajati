@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import monitorizare.service.Service;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,6 +19,7 @@ public class EmployeeController implements Initializable {
     private AnchorPane anchor_viewTeams;
     private Stage crtStage;
 
+    private Service service;
 
     public void setStage(Stage stage) {
         this.crtStage = stage;
@@ -38,5 +40,9 @@ public class EmployeeController implements Initializable {
 
     public void handleClickOnLogOut(ActionEvent actionEvent) {
         this.crtStage.close();
+    }
+
+    public void setService(Service service) {
+        this.service = service;
     }
 }

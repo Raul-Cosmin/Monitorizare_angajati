@@ -1,7 +1,75 @@
-monitorizare/controller/EmployeeController.java
- monitorizare.controller.EmployeeController
+monitorizare/repository/hibernate/PresenceDBRepo.java
+ monitorizare.repository.hibernate.PresenceDBRepo
+monitorizare/domain/Presence.java
+ monitorizare.domain.Presence
+monitorizare/controller/MessageAlert.java
+ monitorizare.controller.MessageAlert
+monitorizare/repository/dbrepointerface/IRepoTeam.java
+ monitorizare.repository.dbrepointerface.IRepoTeam
+monitorizare/domain/Team.java
+ monitorizare.domain.Team
+monitorizare/domain/Employee.java
+ monitorizare.domain.Employee
+monitorizare/domain/TaskStatus.java
+ monitorizare.domain.TaskStatus
+monitorizare/domain/TeamMember.java
+ monitorizare.domain.TeamMember
+monitorizare/domain/MemberRole.java
+ monitorizare.domain.MemberRole
+monitorizare/repository/dbrepointerface/IRepoEmployer.java
+ monitorizare.repository.dbrepointerface.IRepoEmployer
+monitorizare/repository/hibernate/EmployeeDBRepo.java
+ monitorizare.repository.hibernate.EmployeeDBRepo
+monitorizare/validation/EmployerValidator.java
+ monitorizare.validation.EmployerValidator
+monitorizare/repository/dbrepointerface/IRepoEmployee.java
+ monitorizare.repository.dbrepointerface.IRepoEmployee
+monitorizare/domain/Entity.java
+ monitorizare.domain.Entity
+monitorizare/validation/EmployeeValidator.java
+ monitorizare.validation.EmployeeValidator
+monitorizare/repository/hibernate/EmployerDBRepo.java
+ monitorizare.repository.hibernate.EmployerDBRepo
+monitorizare/repository/dbrepointerface/IRepoTeamMember.java
+ monitorizare.repository.dbrepointerface.IRepoTeamMember
+monitorizare/exception/MonitoringException.java
+ monitorizare.exception.MonitoringException
+monitorizare/domain/Employer.java
+ monitorizare.domain.Employer
+monitorizare/repository/dbrepointerface/IRepoPresence.java
+ monitorizare.repository.dbrepointerface.IRepoPresence
+monitorizare/repository/hibernate/TeamDBRepo.java
+ monitorizare.repository.hibernate.TeamDBRepo
+monitorizare/repository/ICrudRepository.java
+ monitorizare.repository.ICrudRepository
+monitorizare/validation/Validator.java
+ monitorizare.validation.Validator
+monitorizare/domain/EmployeeStatus.java
+ monitorizare.domain.EmployeeStatus
+monitorizare/domain/EmployeeDTOTeam.java
+ monitorizare.domain.EmployeeDTOTeam
+monitorizare/repository/hibernate/TeamMemberDBRepo.java
+ monitorizare.repository.hibernate.TeamMemberDBRepo
+monitorizare/domain/Task.java
+ monitorizare.domain.Task
+monitorizare/domain/EmployeeDTO.java
+ monitorizare.domain.EmployeeDTO
+monitorizare/repository/hibernate/TaskDBRepo.java
+ monitorizare.repository.hibernate.TaskDBRepo
+monitorizare/repository/dbrepointerface/IRepoTask.java
+ monitorizare.repository.dbrepointerface.IRepoTask
+monitorizare/observer/Observable.java
+ monitorizare.observer.Observable
+monitorizare/observer/Observer.java
+ monitorizare.observer.Observer
 monitorizare/MainFX.java
  monitorizare.MainFX
+monitorizare/controller/EmployeeController.java
+ monitorizare.controller.EmployeeController
+monitorizare/service/Service.java
+ monitorizare.service.Service
+monitorizare/TestApp.java
+ monitorizare.TestApp
 monitorizare/controller/EmployerController.java
  monitorizare.controller.EmployerController
 monitorizare/controller/LogInController.java

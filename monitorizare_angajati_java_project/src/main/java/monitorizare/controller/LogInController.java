@@ -10,6 +10,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import monitorizare.domain.Employer;
+import monitorizare.service.Service;
 
 import java.io.IOException;
 import java.net.URL;
@@ -31,10 +33,34 @@ public class LogInController implements Initializable {
     @FXML
     private AnchorPane logIn_anchor;
 
+    private Service service;
 
     private Stage logInStage;
 
+    public void setService(Service service){
+        this.service = service;
+    }
+
     public void handleClickOnLogInEmployer(ActionEvent actionEvent) {
+
+        String emailEmployer = emailEmployer_textField.getText();
+        String passwordEmployer = passwordEmployer_textField.getText();
+
+        if(emailEmployer.equals("") || passwordEmployer.equals(""))
+        {
+            MessageAlert.showErrorMessage("Email and password must be not empty!");
+            return;
+        }
+
+        Employer employer;
+
+        try{
+            employer = service.logInEmployer(emailEmployer,passwordEmployer);
+        }
+        catch (Exception ex){
+            MessageAlert.showErrorMessage(ex.getMessage());
+            return;
+        }
 
         Stage stage1 = new Stage();
         FXMLLoader loader  = new FXMLLoader();
@@ -45,8 +71,8 @@ public class LogInController implements Initializable {
             Scene scene = new Scene(root);
             EmployerController controller = loader.getController();
             controller.setStage(stage1);
-
-
+            controller.setService(service);
+            controller.setCurrentEmployer(employer);
 
             stage1.setScene(scene);
 
@@ -68,7 +94,7 @@ public class LogInController implements Initializable {
 
             EmployeeController controller = loader.getController();
             controller.setStage(stage1);
-
+            controller.setService(service);
 
             Scene scene = new Scene(root);
 

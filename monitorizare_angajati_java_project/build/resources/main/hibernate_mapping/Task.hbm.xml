@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="monitorizare.domain.Task"
+           table="tasks">
+        <id type="java.lang.Integer" name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="description"
+                column="description"/>
+        <property
+                name="assignDate"
+                column="assign_date"/>
+        <property
+                name="deadline"
+                column="deadline"/>
+        <property
+                name="completionDate"
+                column="completion_date"/>
+
+
+        <property name="status" column="status">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">monitorizare.domain.TaskStatus</param>
+                <param name="type">12</param>
+            </type>
+        </property>
+
+        <property name="idEmployee" column="id_employee" />
+        <property name="idTeam" column="id_team"/>
+
+
+    </class>
+</hibernate-mapping>
