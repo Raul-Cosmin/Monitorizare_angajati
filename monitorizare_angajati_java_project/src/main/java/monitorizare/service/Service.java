@@ -37,13 +37,8 @@ public class Service implements Observable {
             Presence p = repoPresence.findTodayPresenceFor(emp.getId());
             EmployeeDTO empDto = new EmployeeDTO(emp.getId(),emp.getFirstName(), emp.getLastName(), emp.getEmployeeStatus());
 
-            if(p != null)
-            {
-                if(p.getArrivalTime() != null)
-                    empDto.setArrivalTime(p.getArrivalTime());
-                if(p.getDepartureTime() != null)
-                    empDto.setDepartureTime(p.getDepartureTime());
-            }
+            empDto.setArrivalTime(p.getArrivalTime());
+            empDto.setDepartureTime(p.getDepartureTime());
 
             employees.add(empDto);
 

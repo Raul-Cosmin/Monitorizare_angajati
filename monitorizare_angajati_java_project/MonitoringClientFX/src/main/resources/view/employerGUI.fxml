@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="921.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitoring.controller.EmployerController">
+   <children>
+      <AnchorPane fx:id="anchor_topEmployees" layoutX="21.0" layoutY="400.0" prefHeight="448.0" prefWidth="903.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="topEmployees" layoutX="21.0" layoutY="70.0" prefHeight="200.0" prefWidth="434.0">
+               <columns>
+                  <TableColumn fx:id="col_idTopEmp" prefWidth="75.0" text="ID" />
+                  <TableColumn fx:id="col_lastNameEmpTop" prefWidth="118.0" text="Last Name" />
+                  <TableColumn fx:id="col_firstNameColTop" prefWidth="101.0" text="First Name" />
+                  <TableColumn fx:id="col_taskSolvedTop" prefWidth="138.0" text="No. Solved tasks" />
+               </columns>
+            </TableView>
+            <Label layoutX="21.0" layoutY="14.0" prefHeight="32.0" prefWidth="201.0" text="Top Employees">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="48.0" layoutX="115.0" layoutY="46.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_tasks" layoutX="21.0" layoutY="400.0" prefHeight="448.0" prefWidth="903.0" style="-fx-background-color: white;">
+         <children>
+            <TableView fx:id="tasksTable" layoutX="21.0" layoutY="70.0" prefHeight="147.0" prefWidth="879.0">
+               <columns>
+                  <TableColumn fx:id="idTaskCol" prefWidth="38.0" text="ID" />
+                  <TableColumn fx:id="descriptionTaskCol" prefWidth="137.0" text="Description" />
+                  <TableColumn fx:id="assignDateTaskCol" prefWidth="152.0" text="Assign Date" />
+                  <TableColumn fx:id="completionDateTaskCol" prefWidth="152.0" text="Completion Date" />
+                  <TableColumn fx:id="deadlineTaskCol" prefWidth="130.0" text="Deadline " />
+                  <TableColumn fx:id="statusTaskCol" prefWidth="122.0" text="Status" />
+                  <TableColumn fx:id="idEmployeeTaskCol" prefWidth="83.0" text="ID_Employee" />
+                  <TableColumn fx:id="idTeamTaskCol" prefWidth="63.0" text="ID_Team" />
+               </columns>
+            </TableView>
+            <Label layoutX="21.0" layoutY="14.0" prefHeight="32.0" prefWidth="201.0" text="Tasks">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="48.0" layoutX="115.0" layoutY="46.0" startX="-100.0" />
+            <TableView fx:id="teamsTable" layoutX="21.0" layoutY="275.0" prefHeight="147.0" prefWidth="299.0">
+               <columns>
+                  <TableColumn fx:id="idTeamCol" prefWidth="50.0" text="ID" />
+                  <TableColumn fx:id="teamNameCol" prefWidth="125.0" text="Team Name" />
+                  <TableColumn fx:id="noMembersTeamCol" prefWidth="126.0" text="No. Members" />
+               </columns>
+            </TableView>
+            <Button layoutX="678.0" layoutY="321.0" mnemonicParsing="false" onAction="#handleOnSendTaskToEmployee" prefHeight="39.0" prefWidth="211.0" text="Send task to employee">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="678.0" layoutY="374.0" mnemonicParsing="false" onAction="#handleOnSendTaskToTeam" prefHeight="39.0" prefWidth="211.0" text="Send task to team">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="21.0" layoutY="233.0" prefHeight="32.0" prefWidth="201.0" text="Teams">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="48.0" layoutX="122.0" layoutY="265.0" startX="-100.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchor_createTeam" layoutX="21.0" layoutY="400.0" prefHeight="464.0" prefWidth="903.0" style="-fx-background-color: white">
+         <children>
+            <Label layoutX="31.0" layoutY="14.0" prefHeight="17.0" prefWidth="143.0" text="Create team">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Line endX="48.0" layoutX="110.0" layoutY="43.0" startX="-100.0" />
+            <Label layoutX="43.0" layoutY="75.0" prefHeight="32.0" prefWidth="96.0" text="Employee:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="employeeSelected_txt" layoutX="139.0" layoutY="75.0" prefHeight="32.0" prefWidth="179.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button layoutX="327.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleOnSelectEmployee" prefHeight="32.0" prefWidth="63.0" text="Select" />
+            <Label layoutX="24.0" layoutY="127.0" prefHeight="32.0" prefWidth="114.0" text="Member role:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="20.0" layoutY="283.0" mnemonicParsing="false" onAction="#handOnTeamCreated" prefHeight="32.0" prefWidth="128.0" text="Create">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <TableView fx:id="teamTable" layoutX="489.0" layoutY="41.0" prefHeight="296.0" prefWidth="410.0">
+               <columns>
+                  <TableColumn fx:id="idEmployeeTeamCol" prefWidth="36.0" text="ID" />
+                  <TableColumn fx:id="lastNameEmpTeamCol" prefWidth="113.0" text="Last Name" />
+                  <TableColumn fx:id="firstNameEmpTeamCol" prefWidth="128.0" text="First Name" />
+                  <TableColumn fx:id="memberRoleTeamCol" prefWidth="151.0" text="Member Role" />
+               </columns>
+            </TableView>
+            <Button id="left" layoutX="434.0" layoutY="81.0" mnemonicParsing="false" onAction="#handleOnMoveIntoEmpTable" prefHeight="27.0" prefWidth="37.0" text="&gt;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="434.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleOnMoveOutEmpTable" prefHeight="27.0" prefWidth="37.0" text="&lt;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label layoutX="15.0" layoutY="195.0" prefHeight="27.0" prefWidth="114.0" text="Team name:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="teamName_txt" layoutX="139.0" layoutY="193.0" prefHeight="32.0" prefWidth="179.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <JFXComboBox fx:id="comboMemberRole" layoutX="138.0" layoutY="131.0" prefHeight="25.0" prefWidth="179.0" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="21.0" layoutY="22.0" prefHeight="39.0" prefWidth="114.0" text="Employer:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="employerName_lbl" layoutX="135.0" layoutY="22.0" prefHeight="39.0" prefWidth="241.0" text="Popescu Mihai">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="employeesTable" layoutX="367.0" layoutY="146.0" prefHeight="216.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="idEmployeeCol" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="lastNameEmployeeCol" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="firstNameEmployeeCol" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="arrivalTimeEmployeeCol" prefWidth="114.0" text="Arrival Time" />
+            <TableColumn fx:id="departureTimeEmployeeCol" prefWidth="111.0" text="Departure Time" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+            <TableColumn fx:id="employeeStatusCol" prefWidth="102.0" text="Employee Status" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="113.0" layoutY="99.0" prefHeight="39.0" prefWidth="108.0" text="Menu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="171.0" layoutX="147.0" layoutY="134.0" startX="-135.0" />
+      <Label layoutX="393.0" layoutY="103.0" prefHeight="32.0" prefWidth="201.0" text="Employees">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="214.0" layoutX="131.0" layoutY="61.0" startX="-118.0" />
+      <VBox layoutX="29.0" layoutY="138.0" prefHeight="216.0" prefWidth="272.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleClickOnAssignTask" prefHeight="44.0" prefWidth="280.0" text="Assign tasks">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleClickOnViewTop" prefHeight="44.0" prefWidth="280.0" text="View top">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleClickOnCreateTeam" prefHeight="44.0" prefWidth="280.0" text="Create team">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleClickOnLogOut" prefHeight="44.0" prefWidth="280.0" text="LogOut">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Line endX="48.0" layoutX="504.0" layoutY="134.0" startX="-117.0" />
+      <Line endX="171.0" layoutX="149.0" layoutY="371.0" startX="-135.0" />
+   </children>
+</AnchorPane>

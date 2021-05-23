@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+    <bean id="employerValidator" class="monitoring.domain.validation.EmployerValidator"/>
+
+    <bean id="employeeValidator" class="monitoring.domain.validation.EmployeeValidator"/>
+
+<!--    <bean id="dataSource">-->
+<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+<!--        <property name="url" value="jdbc:mysql://localhost:3306/usersdb"/>-->
+<!--        <property name="username" value="root"/>-->
+<!--        <property name="password" value="secret"/>-->
+<!--    </bean>-->
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="configLocation" value="hibernate.cfg.xml"/>
+    </bean>
+
+<!--    <tx:annotation-driven />-->
+<!--    <bean id="transactionManager"-->
+<!--          class="org.springframework.orm.hibernate4.HibernateTransactionManager">-->
+<!--        <property name="sessionFactory" ref="sessionFactory" />-->
+<!--    </bean>-->
+
+    <bean id="employerRepo" class="monitoring.repository.hibernate.EmployerDBRepo" >
+        <constructor-arg index="0" ref="employerValidator"/>
+        <constructor-arg index="1" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="employeeRepo" class="monitoring.repository.hibernate.EmployeeDBRepo" >
+        <constructor-arg index="0" ref="employeeValidator"/>
+        <constructor-arg index="1" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="presenceRepo" class="monitoring.repository.hibernate.PresenceDBRepo" >
+        <constructor-arg index="0" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="taskRepo" class="monitoring.repository.hibernate.TaskDBRepo" >
+        <constructor-arg index="0" ref="sessionFactory"/>
+    </bean>
+    <bean id="teamRepo" class="monitoring.repository.hibernate.TeamDBRepo" >
+        <constructor-arg index="0" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="teamMemberRepo" class="monitoring.repository.hibernate.TeamMemberDBRepo" >
+        <constructor-arg index="0" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="serverService" class="monitoring.server.ServerService">
+        <constructor-arg index="0" ref="employeeRepo"/>
+        <constructor-arg index="1" ref="employerRepo"/>
+        <constructor-arg index="2" ref="teamRepo"/>
+        <constructor-arg index="3" ref="taskRepo"/>
+        <constructor-arg index="4" ref="presenceRepo"/>
+        <constructor-arg index="5" ref="teamMemberRepo"/>
+
+    </bean>
+
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="Monitoring"/>
+        <property name="service" ref="serverService"/>
+        <property name="serviceInterface" value="monitoring.service.IMonitoringServices"/>
+        <property name="servicePort" value="1099" />
+    </bean>
+
+
+</beans>

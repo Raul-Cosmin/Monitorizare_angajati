@@ -1,0 +1,26 @@
+monitoring/repository/hibernate/TaskDBRepo.java
+ monitoring.repository.hibernate.TaskDBRepo
+monitoring/repository/dbrepointerface/IRepoTeamMember.java
+ monitoring.repository.dbrepointerface.IRepoTeamMember
+monitoring/repository/hibernate/PresenceDBRepo.java
+ monitoring.repository.hibernate.PresenceDBRepo
+monitoring/repository/dbrepointerface/IRepoEmployee.java
+ monitoring.repository.dbrepointerface.IRepoEmployee
+monitoring/repository/dbrepointerface/IRepoTask.java
+ monitoring.repository.dbrepointerface.IRepoTask
+monitoring/repository/dbrepointerface/IRepoEmployer.java
+ monitoring.repository.dbrepointerface.IRepoEmployer
+monitoring/repository/hibernate/TeamDBRepo.java
+ monitoring.repository.hibernate.TeamDBRepo
+monitoring/repository/dbrepointerface/IRepoPresence.java
+ monitoring.repository.dbrepointerface.IRepoPresence
+monitoring/repository/hibernate/EmployerDBRepo.java
+ monitoring.repository.hibernate.EmployerDBRepo
+monitoring/repository/hibernate/EmployeeDBRepo.java
+ monitoring.repository.hibernate.EmployeeDBRepo
+monitoring/repository/ICrudRepository.java
+ monitoring.repository.ICrudRepository
+monitoring/repository/dbrepointerface/IRepoTeam.java
+ monitoring.repository.dbrepointerface.IRepoTeam
+monitoring/repository/hibernate/TeamMemberDBRepo.java
+ monitoring.repository.hibernate.TeamMemberDBRepo

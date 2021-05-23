@@ -12,60 +12,6 @@
 
 <AnchorPane prefHeight="329.0" prefWidth="385.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="monitorizare.controller.LogInController">
    <children>
-      <AnchorPane fx:id="logInEmployee_anchor" layoutX="31.0" layoutY="37.0" prefHeight="312.0" prefWidth="324.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="45.0" AnchorPane.topAnchor="45.0">
-         <children>
-            <Label alignment="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="33.0" prefWidth="197.0" text="Autentificare angajat">
-               <font>
-                  <Font size="20.0" />
-               </font>
-            </Label>
-            <VBox layoutX="10.0" layoutY="80.0" prefHeight="101.0" prefWidth="306.0">
-               <children>
-                  <HBox prefHeight="37.0" prefWidth="294.0">
-                     <children>
-                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="70.0" text="Email">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="emailEmployee_textField" prefHeight="35.0" prefWidth="231.0">
-                           <HBox.margin>
-                              <Insets left="5.0" />
-                           </HBox.margin>
-                        </TextField>
-                     </children>
-                  </HBox>
-                  <HBox prefHeight="37.0" prefWidth="294.0">
-                     <children>
-                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="70.0" text="Password">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Label>
-                        <TextField fx:id="passwordEmployee_textField" prefHeight="35.0" prefWidth="231.0">
-                           <HBox.margin>
-                              <Insets left="5.0" />
-                           </HBox.margin>
-                        </TextField>
-                     </children>
-                     <VBox.margin>
-                        <Insets top="5.0" />
-                     </VBox.margin>
-                  </HBox>
-               </children>
-            </VBox>
-            <Button layoutX="246.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClickOnLogInEmployee" prefHeight="33.0" prefWidth="70.0" text="LogIn" AnchorPane.bottomAnchor="5.0">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button layoutX="5.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClickOnBack" prefHeight="33.0" prefWidth="70.0" text="Back" AnchorPane.bottomAnchor="5.0">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
       <AnchorPane fx:id="logIn_anchor" layoutX="31.0" layoutY="37.0" prefHeight="312.0" prefWidth="324.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="45.0" AnchorPane.topAnchor="45.0">
          <children>
             <VBox layoutX="69.0" layoutY="87.0" prefHeight="88.0" prefWidth="197.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="58.0" AnchorPane.topAnchor="89.0">
@@ -126,6 +72,56 @@
                </children>
             </VBox>
             <Button layoutX="246.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClickOnLogInEmployer" prefHeight="33.0" prefWidth="70.0" text="LogIn" AnchorPane.bottomAnchor="5.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="5.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClickOnBack" prefHeight="33.0" prefWidth="70.0" text="Back" AnchorPane.bottomAnchor="5.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="logInEmployee_anchor" layoutX="31.0" layoutY="37.0" prefHeight="312.0" prefWidth="324.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="45.0" AnchorPane.topAnchor="45.0">
+         <children>
+            <Label alignment="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="33.0" prefWidth="197.0" text="Autentificare angajat">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <VBox layoutX="10.0" layoutY="80.0" prefHeight="101.0" prefWidth="306.0">
+               <children>
+                  <HBox prefHeight="37.0" prefWidth="294.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="70.0" text="Email">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="emailEmployee_textField" prefHeight="35.0" prefWidth="231.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="37.0" prefWidth="294.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="79.0" text="Password">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <PasswordField fx:id="passwordEmployee_textField" prefHeight="35.0" prefWidth="231.0" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button layoutX="246.0" layoutY="257.0" mnemonicParsing="false" onAction="#handleClickOnLogInEmployee" prefHeight="33.0" prefWidth="70.0" text="LogIn" AnchorPane.bottomAnchor="5.0">
                <font>
                   <Font size="16.0" />
                </font>

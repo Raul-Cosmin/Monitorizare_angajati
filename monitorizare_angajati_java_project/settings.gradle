@@ -1,2 +1,10 @@
 rootProject.name = 'java_project'
+include 'MonitoringClientFX'
+include 'MonitoringModel'
+include 'MonitoringNetworking'
+include 'MonitortingPersistance'
+include 'MonitoringServer'
+include 'MonitoringService'
+include 'MonitoringClientFX'
+include 'MonitoringPersistence'
 

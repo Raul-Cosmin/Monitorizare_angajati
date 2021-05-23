@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="monitoring.domain.Employee"
+           table="employees">
+        <id type="java.lang.Integer" name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="firstName"
+                column="firstname"/>
+        <property
+                name="lastName"
+                column="lastname"/>
+        <property
+                name="email"
+                column="email"/>
+
+        <property name="password"
+                  column="password"/>
+
+        <property name="employeeStatus" column="employee_status">
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">monitoring.domain.EmployeeStatus</param>
+                <param name="type">12</param>
+            </type>
+
+        </property>
+
+        <property name="nrTasksCompleted"
+                  column="nr_tasks_completed"/>
+    </class>
+</hibernate-mapping>

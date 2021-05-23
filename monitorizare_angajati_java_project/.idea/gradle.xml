@@ -9,6 +9,13 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/MonitoringClientFX" />
+            <option value="$PROJECT_DIR$/MonitoringModel" />
+            <option value="$PROJECT_DIR$/MonitoringNetworking" />
+            <option value="$PROJECT_DIR$/MonitoringPersistence" />
+            <option value="$PROJECT_DIR$/MonitoringServer" />
+            <option value="$PROJECT_DIR$/MonitoringService" />
+            <option value="$PROJECT_DIR$/MonitortingPersistance" />
           </set>
         </option>
       </GradleProjectSettings>
