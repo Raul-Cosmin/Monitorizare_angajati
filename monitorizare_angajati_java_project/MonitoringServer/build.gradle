@@ -14,7 +14,6 @@ dependencies {
     compile project (':MonitoringModel')
     compile project (':MonitoringService')
     compile project (':MonitoringPersistence')
-    compile project (':MonitoringNetworking')
 
     compile 'org.springframework:spring-context:5.0.4.RELEASE'
     // https://mvnrepository.com/artifact/org.hibernate/hibernate-gradle-plugin

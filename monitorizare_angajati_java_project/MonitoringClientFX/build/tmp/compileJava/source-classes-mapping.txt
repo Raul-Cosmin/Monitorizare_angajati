@@ -1,5 +1,7 @@
 monitoring/controller/MessageAlert.java
  monitoring.controller.MessageAlert
+monitoring/controller/EmployeeController.java
+ monitoring.controller.EmployeeController
 monitoring/controller/EmployerController.java
  monitoring.controller.EmployerController
 monitoring/controller/LogInController.java
@@ -8,5 +10,3 @@ monitoring/controller/LogInController.java
  monitoring.controller.LogInController$2
 StartSpringClientFX.java
  StartSpringClientFX
-monitoring/controller/EmployeeController.java
- monitoring.controller.EmployeeController

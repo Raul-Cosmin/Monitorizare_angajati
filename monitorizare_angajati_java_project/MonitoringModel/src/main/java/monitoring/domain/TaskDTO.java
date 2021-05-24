@@ -97,7 +97,7 @@ public class TaskDTO {
 
     public void setDeadline_str(LocalDateTime deadline) {
         if(deadline != null)
-            this.assignDate_str = deadline.format(formatter);
+            this.deadline_str = deadline.format(formatter);
     }
 
     public String getCompletionDate_str() {

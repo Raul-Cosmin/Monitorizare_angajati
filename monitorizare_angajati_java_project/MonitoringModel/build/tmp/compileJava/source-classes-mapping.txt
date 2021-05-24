@@ -30,7 +30,7 @@ monitoring/domain/TaskStatus.java
  monitoring.domain.TaskStatus
 monitoring/domain/Task.java
  monitoring.domain.Task
-monitoring/domain/TaskDTO.java
- monitoring.domain.TaskDTO
 monitoring/domain/TeamDTO.java
  monitoring.domain.TeamDTO
+monitoring/domain/TaskDTO.java
+ monitoring.domain.TaskDTO

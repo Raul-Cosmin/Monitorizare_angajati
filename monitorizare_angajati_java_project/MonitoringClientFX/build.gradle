@@ -23,7 +23,6 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     compile project (':MonitoringModel')
     compile project (':MonitoringService')
-    compile project (':MonitoringNetworking')
 
     // https://mvnrepository.com/artifact/com.jfoenix/jfoenix
     implementation group: 'com.jfoenix', name: 'jfoenix', version: '9.0.1'

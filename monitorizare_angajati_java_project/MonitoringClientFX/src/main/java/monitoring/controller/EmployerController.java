@@ -212,6 +212,14 @@ public class EmployerController  extends UnicastRemoteObject implements IMonitor
 
         initialize();
 
+        comboMemberRole.getItems().add("TEAM_LEADER");
+        comboMemberRole.getItems().add("FACILITATOR");
+        comboMemberRole.getItems().add("RECORDER");
+        comboMemberRole.getItems().add("TIME_KEEPER");
+        comboMemberRole.getItems().add("MEMBER");
+
+        comboMemberRole.setPromptText("Member role");
+
 
         initModelEmployees(getDTOFromEmployees(service.getAllEmployeesForTodayPresence()));
 
@@ -282,13 +290,7 @@ public class EmployerController  extends UnicastRemoteObject implements IMonitor
 
         topTableInitialize();
 
-        comboMemberRole.getItems().add("TEAM_LEADER");
-        comboMemberRole.getItems().add("FACILITATOR");
-        comboMemberRole.getItems().add("RECORDER");
-        comboMemberRole.getItems().add("TIME_KEEPER");
-        comboMemberRole.getItems().add("MEMBER");
 
-        comboMemberRole.setPromptText("Member role");
 
     }
 
