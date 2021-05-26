@@ -9,22 +9,12 @@
 
     <bean id="employeeValidator" class="monitoring.domain.validation.EmployeeValidator"/>
 
-<!--    <bean id="dataSource">-->
-<!--        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
-<!--        <property name="url" value="jdbc:mysql://localhost:3306/usersdb"/>-->
-<!--        <property name="username" value="root"/>-->
-<!--        <property name="password" value="secret"/>-->
-<!--    </bean>-->
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="configLocation" value="hibernate.cfg.xml"/>
     </bean>
 
-<!--    <tx:annotation-driven />-->
-<!--    <bean id="transactionManager"-->
-<!--          class="org.springframework.orm.hibernate4.HibernateTransactionManager">-->
-<!--        <property name="sessionFactory" ref="sessionFactory" />-->
-<!--    </bean>-->
+
 
     <bean id="employerRepo" class="monitoring.repository.hibernate.EmployerDBRepo" >
         <constructor-arg index="0" ref="employerValidator"/>
