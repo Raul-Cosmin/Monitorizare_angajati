@@ -37474,9 +37474,9 @@
 														"$ref": "AAAAAAF47p1OtV4IREY="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 146.95166015625,
+													"width": 138.94091796875,
 													"height": 13,
 													"text": "LoginSefSD_NormalFlow"
 												},
@@ -37489,7 +37489,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -40672,9 +40672,9 @@
 														"$ref": "AAAAAAF47uloUXNAj94="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 205.95947265625,
+													"width": 194.44482421875,
 													"height": 13,
 													"text": "VizualizareAngajatiSD_NormalFlow"
 												},
@@ -40687,7 +40687,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -47097,9 +47097,9 @@
 														"$ref": "AAAAAAF472EhEIHX6Yw="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 21,
-													"width": 196.79345703125,
+													"width": 182.9619140625,
 													"height": 13,
 													"text": "AsigneazaSarciniCD_NormalFlow"
 												},
@@ -47112,7 +47112,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 21,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -52372,9 +52372,9 @@
 														"$ref": "AAAAAAF5nS9BR5+YByo="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 144.533203125,
+													"width": 137.9697265625,
 													"height": 13,
 													"text": "ViewTopSD_NormalFlow"
 												},
@@ -52387,7 +52387,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -54777,9 +54777,9 @@
 														"$ref": "AAAAAAF5nUqdcqweas0="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 253.89697265625,
+													"width": 238.53564453125,
 													"height": 13,
 													"text": "InchiredereAplicatieAngajatSD_NormalFlow"
 												},
@@ -54792,7 +54792,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -56550,9 +56550,9 @@
 														"$ref": "AAAAAAF5nVQQEK7HBf8="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 13,
-													"width": 198.7294921875,
+													"width": 185.77392578125,
 													"height": 13,
 													"text": "VizualizareEchipeSD_NormalFlow"
 												},
@@ -56565,7 +56565,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 13,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -62974,9 +62974,9 @@
 														"$ref": "AAAAAAF5nbgLP+NTaMo="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
-													"top": 5,
-													"width": 185.970703125,
+													"left": 22.55908203125,
+													"top": 13,
+													"width": 175.03369140625,
 													"height": 13,
 													"text": "LogInEmployeeSD_NormalFlow"
 												},
@@ -62988,13 +62988,14 @@
 													},
 													"font": "Arial;13;1",
 													"left": 5,
-													"top": 5,
-													"width": 14.72998046875,
+													"top": 13,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
 											],
 											"font": "Arial;13;0",
+											"top": 8,
 											"width": 1769,
 											"height": 1241,
 											"nameLabel": {
@@ -66304,9 +66305,9 @@
 														"$ref": "AAAAAAF5nclKROe/phE="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 187.392578125,
+													"width": 173.57373046875,
 													"height": 13,
 													"text": "RezolvaSarcinaCD_NormalFlow"
 												},
@@ -66319,7 +66320,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
@@ -69853,9 +69854,9 @@
 														"$ref": "AAAAAAF5ndJJQvl9vj8="
 													},
 													"font": "Arial;13;0",
-													"left": 24.72998046875,
+													"left": 22.55908203125,
 													"top": 5,
-													"width": 206.181640625,
+													"width": 190.16650390625,
 													"height": 13,
 													"text": "FinalizeazaSarcinaCD_NormalFlow"
 												},
@@ -69868,7 +69869,7 @@
 													"font": "Arial;13;1",
 													"left": 5,
 													"top": 5,
-													"width": 14.72998046875,
+													"width": 12.55908203125,
 													"height": 13,
 													"text": "sd"
 												}
